@@ -1,7 +1,8 @@
 from fycharts.SpotifyCharts import SpotifyCharts
 from pathlib import Path
-import logging
 import datetime
+import logging
+logging.basicConfig(level=logging.DEBUG)
 
 
 filepath = Path("global_top_200_daily.csv")
