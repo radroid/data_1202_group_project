@@ -8,7 +8,8 @@ import time
 import sys
 
 
-client_credentials_manager = SpotifyClientCredentials()
+client_credentials_manager = SpotifyClientCredentials(client_id="7dbe272b9d9b44278d84430e76374e88",
+                                                      client_secret="14e94037bec24a3680b9249332a3d129")
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 sp.trace = False
 
@@ -16,7 +17,7 @@ if len(sys.argv) > 1:
     artist_name = ' '.join(sys.argv[1:])
 else:
     artist_name = 'weezer'
-
+sp.
 results = sp.search(q=artist_name, limit=50)
 tids = []
 for i, t in enumerate(results['tracks']['items']):
