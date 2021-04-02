@@ -5,3 +5,4 @@ all_regions_top_200_daily.csv
 .ipynb_checkpoints/
 all_regions_top_200_weekly.csv
 .DS_Store
+*.csv
