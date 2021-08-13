@@ -120,3 +120,6 @@ dmypy.json
 *.csv
 env/
 visualizations/Rough attempt 1.twb
+*.otf
+*.ttf
+*.eps
